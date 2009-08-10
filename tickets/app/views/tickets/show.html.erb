@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @ticket.name %>
+</p>
+
+<p>
+  <b>Seat:</b>
+  <%=h @ticket.seat_id %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @ticket.email %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @ticket.price %>
+</p>
+
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>
